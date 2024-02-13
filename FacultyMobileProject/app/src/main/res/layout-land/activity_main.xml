@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="357dp"
+        android:layout_height="190dp"
+        android:layout_gravity="start|top"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/faculty_id_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="start|top"
+            android:text="@string/faculty_id_text_view" />
+
+        <TextView
+            android:id="@+id/faculty_lname_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="start|center"
+            android:text="@string/faculty_lname_text_view" />
+
+        <TextView
+            android:id="@+id/faculty_fname_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="start|bottom"
+            android:text="@string/faculty_fname_text_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="337dp"
+        android:layout_height="169dp"
+        android:layout_gravity="end|top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/faculty_salary_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="top"
+            android:text="@string/faculty_salary_text_view" />
+
+        <TextView
+            android:id="@+id/faculty_bonus_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="@string/faculty_bonus_text_view" />
+
+        <TextView
+            android:id="@+id/bonus_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:text="@string/bonus_text_view" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/display_bonus_button"
+        android:layout_width="269dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/display_bonus_button"
+        android:layout_gravity="center|bottom"
+      />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prev_faculty_button"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:text="@string/prev_faculty_button" />
+
+        <Button
+            android:id="@+id/next_faculty_button"
+            android:layout_width="177dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/next_faculty_button" />
+    </LinearLayout>
+
+</FrameLayout>
