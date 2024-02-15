@@ -9,4 +9,12 @@
     <string name="display_bonus_button">Display Bonus</string>
     <string name="next_faculty_button">Next Faculty</string>
     <string name="prev_faculty_button">Prev Faculty</string>
+
+    <string name="update_display_button">Update Faculty | Display Bonus</string>
+    <string name="faculty_id">Faculty ID</string>
+    <string name="faculty_fname">Faculty FName</string>
+    <string name="faculty_lname">Faculty LName</string>
+    <string name="faculty_salary">Faculty Salary</string>
+    <string name="faculty_rate_bonus">Faculty Rate Bonus</string>
+    <string name="faculty_details">Faculty Details</string>
 </resources>

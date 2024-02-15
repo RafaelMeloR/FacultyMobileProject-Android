@@ -2,6 +2,7 @@ package com.example.facultymobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button NextButton;
     private Button PrevButton;
     private Button CalculateBonusButton;
+    private Button FacultyDetails;
     private int currentIndex=0;
     public static String TAG="Course Project";
     public static String KEY_INDEX = "index";
@@ -97,6 +99,24 @@ public class MainActivity extends AppCompatActivity {
                 facultyFnameText_View.setText(all_faculty[currentIndex].getF_Fname());
                 facultySalaryText_View.setText(Double.toString(all_faculty[currentIndex].getF_Salary()));
                 facultyBonusText_View.setText(Double.toString(all_faculty[currentIndex].getF_bonus()));
+            }
+        });
+
+        //Get the view of FacultyDetails
+        FacultyDetails = (Button) findViewById(R.id.faculty_details_button);
+        FacultyDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int facultyId = all_faculty[currentIndex].getF_id();
+                String facultyFName= all_faculty[currentIndex].getF_Fname();
+                String faultyLName= all_faculty[currentIndex].getF_Lname();
+                double facultySalary= all_faculty[currentIndex].getF_Salary();
+                double facultyRateBonus= all_faculty[currentIndex].getF_bonus();
+                Intent intent = FacultyActivity.newIntent(MainActivity.this, facultyId,
+                        facultyFName, faultyLName,facultySalary,facultyRateBonus);
+                startActivity(intent);
+                //StartActivityIntent.launch(intent);
             }
         });
 
